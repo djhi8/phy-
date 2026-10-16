@@ -1,0 +1,18 @@
+PRACTICAL 5
+Aim:-Variable handling
+
+# With temp variable
+x = int(input("Enter value of x: "))
+y = int(input("Enter value of y: "))
+print(f"\nBefore Swapping: x = {x}, y = {y}")
+temp = x
+x = y
+y = temp
+print(f"After Swapping (using temp variable): x = {x}, y = {y}")
+
+# Without temp variable
+x = int(input("Enter value of x: "))
+y = int(input("Enter value of y: "))
+print(f"\nBefore Swapping: x = {x}, y = {y}")
+x, y = y, x
+print(f"After Swapping (without temp variable): x = {x}, y = {y}")
