@@ -1,0 +1,33 @@
+PRACTICAL  10
+Aim:-Data, time and calender module
+
+import datetime
+import time
+import calendar
+
+today = datetime.date.today()
+print("Current Date:", today)
+print("Date in DD-MM-YYYY:", today.strftime("%d-%m-%Y"))
+print("Date in MM-DD-YYYY:", today.strftime("%m/%d/%Y"))
+print("Date in Month Day, Year:", today.strftime("%B %d, %Y"))
+
+# Convert timestamp to date
+timestamp = time.time()
+date_time = datetime.datetime.fromtimestamp(timestamp)
+print("Timestamp:", timestamp)
+print("Converted Date:", date_time)
+
+# Compare two dates
+date1 = datetime.date(2026, 8, 14)
+date2 = datetime.date(2026, 8, 20)
+
+if date1 < date2:
+    print("Date1 is before Date2")
+elif date1 > date2:
+    print("Date1 is after Date2")
+else:
+    print("Both dates are equal")
+
+# Display monthly calendar
+print("\nMonthly Calendar:")
+print(calendar.month(2026, 8))
