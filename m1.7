@@ -1,0 +1,12 @@
+PRACTICAL 7
+Aim:-Sorting and tuple properties
+
+my_tuple = ((3, 4), (1, 2), (4, 1), (2, 5))
+print("Original Tuple:", my_tuple)
+sorted_tuple = sorted(my_tuple)
+print("Sorted Tuple:", sorted_tuple)
+try:
+    my_tuple[1] = 50
+except TypeError as e:
+    print("Error:", e)
+print("Tuple after modification attempt:", my_tuple)
