@@ -1,0 +1,27 @@
+PRACTICAL 9
+Aim:-String and file handling
+
+Text = "Python is a programming language."
+print("Text:", Text)
+
+if "Python" in Text:
+    print("Python found in the text.")
+else:
+    print("Python not found in the text.")
+
+# Retrieve data from an HTML file
+with open("sample.html", "r") as file:
+    data = file.read()
+print("Data from HTML file:")
+print(data)
+
+<!-- Sample.html file -->
+<html>
+<head>
+    <title>My Page</title>
+</head>
+<body>
+    <h1>Welcome to Python</h1>
+    <p>This is an HTML file.</p>
+</body>
+</html>
